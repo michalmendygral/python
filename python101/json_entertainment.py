@@ -7,7 +7,7 @@ e1 = {
     "agg_id_3": "geo_org",
     "unit": "teu",
     "agg_value_4": "country",
-    "name": "Volume AOR",
+    "name": "Volume",
     "agg_type_4": "geo",
     "topic": "ocean",
     "agg_type_3": "geo",
