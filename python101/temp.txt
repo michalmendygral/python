@@ -1,0 +1,24 @@
+curl -XPUT localhost:9200/_ingest/pipeline/my_simple_pipeline \
+-H "Content-Type: application/json" \
+-d '{
+    "processors": [
+        {
+            "split": {
+                "field": "meta.tags",
+                "separator": " ",
+                "target_field": "meta.tags_parsed",
+                "ignore_missing": true
+            }
+        },
+        {
+            "foreach": {
+                "field": "meta.tags_parsed",
+                "processor": {
+                    "uppercase": {
+                        "field": "_ingest._value"
+                    }
+                }
+            }
+        }
+    ]
+}'
