@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width: 250px, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+      .container {
+        width:45px;
+        height:45px;
+      }
+    </style>
+
+    <body>
+        {% block content %}
+        <p>Ruch : {{ my_string }}</p>
+        <div class="w3-container">
+            <form method ="post" action="/">
+                <table>
+                <tr>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn1" value= {{ btn1 }}> {{ btn1 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn2" value= {{ btn2 }}> {{ btn2 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn3" value= {{ btn3 }}> {{ btn3 }} </button> </td>
+                </tr>
+                <tr>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn4" value={{ btn4 }}> {{ btn4 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn5" value={{ btn5 }}> {{ btn5 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn6" value={{ btn6 }}> {{ btn6 }} </button> </td>
+                </tr>
+                <tr>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn7" value= {{ btn7 }}> {{ btn7 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn8" value= {{ btn8 }}> {{ btn8 }} </button> </td>
+                    <td> <button class="w3-button w3-circle w3-teal container" name="btn9" value= {{ btn9 }}> {{ btn9 }} </button> </td>
+                </tr>
+                </table>
+            </form>
+        </div>
+        {% endblock %}
+        <div class="w3-container">
+            <h2>Batony</h2>
+                <button class="w3-button w3-xlarge w3-circle w3-black">+</button>
+                <button class="w3-button w3-xlarge w3-circle w3-teal">+</button>
+                <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4">+</button>
+        </div>
+    </body>
+</html>
