@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first_blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#EDEDED;">
+<style>
+.btn-primary {
+  color: #EDEDED;
+  background-color: #F08080;
+}
+
+.btn-primary:hover {
+  color: #EDEDED;
+  background-color: #CD5C5C;
+}
+
+.btn-primary:focus {
+  color: #EDEDED;
+  background-color: #F08080;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: #EDEDED;;
+  background-color: #CD5C5C;
+}
+
+.nav-link {
+  color: #F08080;
+}
+
+</style>
+
+{% block content%}
+
+{% endblock %}
+</body>
+</html>
